@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+find . -maxdepth 1 -inum $1 -exec /bin/mv -i {} $2 \;

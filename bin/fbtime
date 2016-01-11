@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -x
+
+# find by time
+
+# Example
+# touch -t 201309010000 start && touch -t 201310300000 stop && find . -type f -newer start \! -newer stop | grep -i anomaly
+
+touch -t $1 /tmp/start && touch -t $2 /tmp/stop && find . -iname "*$3*" -type f -newer /tmp/start \! -newer /tmp/stop

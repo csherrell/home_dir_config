@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+# Fing aNd Grep (fng)
+find -L . -type f -exec grep -q "$@" {} \; -print
