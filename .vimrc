@@ -24,21 +24,26 @@ set ruler
 set viminfo='10,\"100,:20,%,n~/.viminfo
 " Return the cursor to the last edit position
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm$"|endif|endif
-" set smartindent  " this is pretty nifty most of the time 
-" set number     " Good for writing code.
-" setlocal spell spelllang=en_us
-" set spellfile=~/.vim/spellfile.{encoding}.add
-" set nospell
-" ab css Chad S. Sherrell
+set smartindent  " this is pretty nifty most of the time 
+set number     " Good for writing code.
+set spellfile=~/.vim/spellfile.{encoding}.add
+setlocal spell spelllang=en_us
 
 " Leaves the content of the buffer on the screen upon exiting exit
 set t_ti= t_te=
+
+":colorscheme slate
+:colorscheme desert
+setlocal spell spelllang=en_us
+
+filetype indent on
+set smarttab
+map <f2> :w\|!python %
 
 nnoremap <C-H> :Hexmode<CR>
 inoremap <C-H> <Esc>:Hexmode<CR>
 vnoremap <C-H> :<C-U>Hexmode<CR>
 
-"colors phd
-
-
-
+:command Ns set nospell
+:command Spell set spell
+set nospell
