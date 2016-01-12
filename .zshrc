@@ -1,3 +1,11 @@
+export PROJECT_DIR=/home/csherrell/build
+export PROJECT_ENV=dev
+
+export PYTHONPATH=/home/csherrell/Dropbox/testcode/python/rinex2
+export PYTHONPATH=$PYTHONPATH:/home/csherrell/bin
+export PYTHONPATH=$PYTHONPATH:$PROJECT_DIR/$PROJECT_ENV/lib/python
+export PYTHONPATH=$PYTHONPATH:/usr/lib/scons
+
 # Path to your oh-my-zsh installation.
 export ZSH=/home/csherrell/.oh-my-zsh
 
