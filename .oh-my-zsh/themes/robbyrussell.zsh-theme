@@ -4,4 +4,4 @@ PROMPT='${ret_status}%{$fg_bold[green]%}%n@%m %{$fg[cyan]%}%~ $%{$fg_bold[blue]%
 ZSH_THEME_GIT_PROMPT_PREFIX="\ngit:(%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}✗%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%}) ○"
