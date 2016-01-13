@@ -1,2 +1,3 @@
 .vagrant
 .sconsign.dblite
+*.pyc
